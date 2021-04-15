@@ -7,9 +7,12 @@ namespace LineComparisionProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison problem");
-            Length line = new Length(8, 4, 6, 1);
-            double length = line.CalculateLength();
-            Console.WriteLine("Length of line is = " + length);
+            Length line1 = new Length(8, 4, 6, 1);
+            double length1 = line1.CalculateLength();
+            Length line2 = new Length(9, 3, 5, 4);
+            double length2 = line2.CalculateLength();
+            Console.WriteLine("Length of two lines are = " + length1 + "  " + length2);
+            Console.WriteLine(length1.Equals(length2));
         }
     }
 }
